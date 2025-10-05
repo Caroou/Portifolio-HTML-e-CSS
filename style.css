@@ -100,6 +100,25 @@ p {
     flex-shrink: 0;
     /* Impede a imagem de encolher em telas menores */
 }
+.links-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+.links-sociais > a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--roxo);
+}
+.links-sociais > a:hover{
+    color: var(--roxoEscuro);
+}
+.social-icon{
+    width: 2rem;
+}
 
 #desenvolvedora,
 #tecnologias,
@@ -127,6 +146,7 @@ p {
 
 #contato h2 {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 form {
@@ -241,5 +261,10 @@ footer {
     /* FORMULÁRIO */
     form {
         width: 100%;
+    }
+    /* RODAPÉ */
+    footer{
+        text-align: center;
+        font-size: 0.8rem;
     }
 }
