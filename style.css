@@ -1,0 +1,245 @@
+:root {
+    --roxo: #ab68df;
+    --roxoEscuro: #711faf;
+    --corEscura: #0c0c0c;
+    --corClara: #eee;
+    --corTexto: #222;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    /* Boa prática: facilita o cálculo de layout */
+}
+
+body {
+    background: var(--corClara);
+}
+
+h2 {
+    color: var(--roxoEscuro);
+    margin-bottom: 2rem;
+    font-family: "Merriweather", serif;
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--corTexto);
+}
+
+.logo {
+    width: 4rem;
+    margin: 0px 9rem;
+}
+
+.menu {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--corEscura);
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    /* Garante que o menu fique acima de todo o conteúdo */
+}
+
+.menu>nav {
+    margin: 0 auto;
+}
+
+.menu>nav>ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu>nav>ul>li>a {
+    color: var(--roxo);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.menu>nav>ul>li a:hover {
+    color: whitesmoke;
+}
+
+#sobre {
+    margin: 9rem 9rem 5rem 9rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.item-sobre {
+    align-content: center;
+}
+
+.ilustracao-sobre {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-desenvolvedora {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.minhafoto {
+    border-radius: 50%;
+    width: 200px;
+    border: 2px solid var(--roxoEscuro);
+    flex-shrink: 0;
+    /* Impede a imagem de encolher em telas menores */
+}
+
+#desenvolvedora,
+#tecnologias,
+#aprendizado,
+#contato {
+    margin: 3rem 9rem;
+}
+
+.imagens-tecnologia {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.img-tecnologia {
+    width: 7rem;
+}
+
+.lista-aprendizados>li {
+    list-style: none;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#contato h2 {
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+    margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--roxo);
+    outline: none;
+    /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 5px rgba(171, 104, 223, 0.5);
+    /* Sombra suave do roxo */
+}
+
+label {
+    display: block;
+    color: var(--corTexto);
+}
+
+textarea {
+    resize: vertical;
+    /* Permite redimensionar apenas verticalmente */
+    min-height: 120px;
+}
+
+.botao {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--corEscura);
+    color: whitesmoke;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin: 0.5rem 0;
+}
+
+.botao:hover {
+    background-color: var(--roxoEscuro);
+}
+
+footer {
+    background-color: var(--corEscura);
+    color: whitesmoke;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Media Query para Tablets e Celulares (Ponto de quebra: 768px) */
+@media only screen and (max-width: 768px) {
+
+    /* MUDANÇA DE MARGENS GERAIS */
+    #sobre,
+    #desenvolvedora,
+    #tecnologias,
+    #aprendizado,
+    #contato {
+        margin: 2rem 1.5rem;
+    }
+
+    /* MENU */
+    .logo {
+        margin: 0 1.5rem;
+    }
+
+    .menu > nav {
+        /* Esta regra esconde os links (o comentário redundante foi removido) */
+        display: none; 
+    }
+
+    /* SEÇÃO SOBRE */
+    #sobre {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ilustracao-sobre {
+        order: -1;
+        margin: 0 auto;
+    }
+
+    /* SEÇÃO DESENVOLVEDORA */
+    .item-desenvolvedora {
+        flex-direction: column;
+    }
+
+    /* TECNOLOGIAS E APRENDIZADOS */
+    .imagens-tecnologia {
+        justify-content: center;
+    }
+
+    /* FORMULÁRIO */
+    form {
+        width: 100%;
+    }
+}

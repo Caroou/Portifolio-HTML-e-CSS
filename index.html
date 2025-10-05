@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <header class="menu">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logotipo 'CCS'."></a>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre o Projeto</a></li>
+                <li><a href="#desenvolvedora">Desenvolvedora</a></li>
+                <li><a href="#tecnologias">Técnologias</a></li>
+                <li><a href="#Aprendizado">Planos Futuros</a></li>
+                <li><a href="#contato">Entre em Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <div class="item-sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Este projeto é um simples <strong>portifólio acadêmico</strong> desenvolvido como parte da disciplia de
+                <strong>Programação Web</strong>
+                no curso de <strong>Análise e Desenvolvimento de Sistemas</strong>. O objetivo principal é demonstrar
+                minhas habilidades na estruturação
+                do conteúdo, design responsivo e implementação de tecnologias web essenciais.
+            </p>
+        </div>
+        <img class="ilustracao-sobre" src="img/ilustracao.png" alt="Ilustração de um trabalho em equipe.">
+    </section>
+
+    <section id="desenvolvedora">
+        <h2>Desenvolvedora da Página</h2>
+        <div class="item-desenvolvedora">
+            <img class="minhafoto" src="img/foto.jfif" alt="Minha foto.">
+            <p>Olá! Eu sou a <strong>Carollyne</strong>, tenho 23 anos e estou cursando <strong>Análise e
+                    Desenvolvimento de Sistemas</strong> na <strong style="color: #984ed1;">Faculdade
+                    Cruzeiro do Sul</strong>. Estou em busca de uma oportunidade de <strong>Estágio Front-end</strong>
+                para aplicar meus
+                conhecimentos em projetos reais e aprimorar minhas habilidades. Gosto de aprender coisas novas e estou
+                animada para crescer na área de tecnologia, aplicando na prática o que venho estudando.</p>
+        </div>
+    </section>
+
+    <section id="tecnologias">
+        <h2>Técnologias e Conhecimentos</h2>
+        <ul class="imagens-tecnologia">
+            <li><img class="img-tecnologia" src="img/html-5.png" alt="HTML 5"></li>
+            <li><img class="img-tecnologia" src="img/css-3.png" alt="CSS 3"></li>
+            <li><img class="img-tecnologia" src="img/js.png" alt="JavaScript"></li>
+            <li><img class="img-tecnologia" src="img/java.png" alt="Java"></li>
+            <li><img class="img-tecnologia" src="img/git.png" alt="Git"></li>
+            <li><img class="img-tecnologia" src="img/vscode.png" alt="Visual Studio Code"></li>
+        </ul>
+    </section>
+
+    <section id="aprendizado">
+        <h2>Futuros Aprendizados</h2>
+        <ul class="lista-aprendizados">
+            <li><strong>⚛️ React:</strong> Essencial para a construção de interfaces de usuário (UIs) dinâmicas
+                e de alta
+                performance.</li>
+            <li><strong>🟦 TypeScript:</strong> Fundamental para elevar a qualidade do código JavaScript,
+                introduzindo a
+                tipagem estática que previne erros e facilita a manutenção em grandes projetos.</li>
+            <li><strong>🌬️ Tailwind CSS:</strong> Um framework utilitário que permite estilização rápida e
+                responsiva
+                diretamente no HTML, acelerando o fluxo de trabalho do desenvolvedor.</li>
+            <li><strong>🎨 Sass/Less:</strong> Pré-processadores CSS que otimizam a criação de folhas de estilo
+                complexas,
+                utilizando recursos como variáveis, aninhamento e lógica, promovendo organização e reuso de
+                código.</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <form action="https://formspree.io/f/mgvnzalq" method="post">
+            <h2>Entre em Contato!</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button class="botao" type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+    <footer>
+        Projeto de Portfólio Web desenvolvido por Carollyne Correia dos Santos &copy; 2025.
+    </footer>
+</body>
+
+</html>
